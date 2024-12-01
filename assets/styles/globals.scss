@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.products_page {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-gap: 20px;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  padding: 20px;
+
+  @media (max-width: 770px) {
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto 1fr;
+  }
+}

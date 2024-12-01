@@ -1,0 +1,124 @@
+.drink-page {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 470px) {
+        padding: 15px;
+    }
+}
+
+.drink-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (max-width: 470px) {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.drink-details {
+    flex: 1;
+}
+
+.drink-details h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+
+    @media (max-width: 470px) {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}
+
+.drink-details p {
+    margin: 5px 0;
+
+    @media (max-width: 470px) {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
+
+.drink-image {
+    flex-shrink: 0;
+}
+
+.drink-image img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 470px) {
+        max-width: 100px;
+    }
+}
+
+.drink-instructions,
+.drink-ingredients {
+    margin-top: 20px;
+
+    @media (max-width: 470px) {
+        margin-top: 15px;
+    }
+}
+
+.drink-instructions h2,
+.drink-ingredients h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+
+    @media (max-width: 470px) {
+        font-size: 1rem;
+    }
+}
+
+.drink-ingredients ul {
+    list-style: none;
+    padding: 0;
+
+    @media (max-width: 470px) {
+        font-size: 0.85rem;
+    }
+}
+
+.drink-ingredients li {
+    margin: 5px 0;
+}
+
+.drink-ingredients li strong {
+    color: #007bff;
+}
+
+.no-data {
+    text-align: center;
+    margin-top: 50px;
+    color: #555;
+    font-family: Arial, sans-serif;
+
+    h2 {
+        font-size: 24px;
+        color: #333;
+
+        @media (max-width: 470px) {
+            font-size: 1.25rem;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        color: #777;
+
+        @media (max-width: 470px) {
+            font-size: 0.9rem;
+        }
+    }
+}
